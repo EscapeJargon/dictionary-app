@@ -1,0 +1,9 @@
+<h2>Dictionary</h2>
+<app-search (searchEvent)="search($event)"></app-search>
+
+<ul>
+  <li *ngFor="let item of searchResults">
+    <strong>{{ item.word }}</strong>
+    : {{ item.definition }}
+  </li>
+</ul>
